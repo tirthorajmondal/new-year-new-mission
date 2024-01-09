@@ -122,10 +122,30 @@ section , header{
 }
 
 .offer{
-    align-items: center;
+   text-align: center;
+   font-family: Inter;
     
 }
+.offer h2{
+font-size: 78px;
+font-weight: 700;
+margin-bottom: 48px;
+}
 
+.offer .holiday{
+    font-size: 24px;
+font-weight: 500;
+}
+.offer .catagory{
+    font-size: 48px;
+font-weight: 700;
+margin: 20px;
+}
+.offer-img{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 48px;
+}
 main {
     max-width: 1320px;
 }
