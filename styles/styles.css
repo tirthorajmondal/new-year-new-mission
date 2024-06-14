@@ -10,8 +10,7 @@ body {
 
 }
 
-header,
-main {
+header, main {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
@@ -236,18 +235,72 @@ header {
     max-height: 500px;
 }
 
-main {
-    max-width: 1320px;
+/* sale section styles */
+.text-container{
+    text-align: center;
+    margin-bottom: 64px;
 }
+.text-container h2{
+    font-size: 72px;    
+    font-weight: 900;
+    margin: 20px 0;
+}
+.text-container h4{
+    font-size: 32px;
+}
+.text-container p{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* discount section */
+.discount-container{
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    position: relative;
+    /* background: rgb(81, 30, 223); */
+}
+.discount-container .discount{
+    position:absolute;
+    /* background: blue; */
+    left: -150px;
+}
+.red-div{
+    background-color: red;
+    height: 230px;
+    position: relative;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.red-div .gift-box{
+    position: absolute;
+    bottom: 76px;
+    left: 34px;
+}
+
+
+
+
+
+
+
 
 /* awsome product styles */
 .awsome-produsts div h3 {
-    font-size: 24px;
+    font-size: 40px;
+    margin: 15px 0;
 }
 
-.awsome-produsts div h2 {
-    font-size: 40px;
-    margin: 0 22px;
+.awsome-produsts div h4 {
+    font-size: 24px;
+    /* margin: 22px 0; */
 }
 
 .awsome-produsts div p {
@@ -257,15 +310,14 @@ main {
 .awsome-produsts .products {
     margin-top: 80px;
     display: grid;
-    grid-template-columns: 40px, 3fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
 
 }
 
-.product-img {
-    /* width: 424px; */
-    /* height: 370px; */
+.products img {
+    width: 350px;
     border-radius: 16px;
-    /* margin: 25px; */
 }
 
 /* newsletter */
